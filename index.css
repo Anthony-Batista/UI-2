@@ -234,5 +234,21 @@ p{
     .container .slider .slide .caption p{
       font-size: 16px;
     }
+
+    header{
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+
+    }
+    .banner{
+      visibility: hidden;
+    }
+    body{
+      max-width: 100%;
+    }
+    header{
+
+    }
   }
 
