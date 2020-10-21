@@ -73,6 +73,10 @@ h1, h6{
   color: #000;
 }
 
+.logoPic{
+  visibility: hidden;
+  width: 0px;
+}
 
 .banner{
   position: relative;
@@ -140,6 +144,9 @@ footer ul{
   list-style-type: none
 }
 
+.hide{
+  visibility: hidden;
+}
 
 /* slides */
 
@@ -176,6 +183,8 @@ footer ul{
 p{
   -webkit-text-stroke: 1px white ;
 }
+
+
 
 /* slides animation */
 
@@ -215,8 +224,12 @@ p{
   }
   }
 
-  @media (max-width: 768px){
+  
+  @media (max-width: 800px){
     
+    .container{
+      min-width: 100%;
+    }
 
     .container .slider .slide .caption{
       position: absolute;
@@ -252,3 +265,14 @@ p{
     }
   }
 
+
+@media(max-width:500px){  
+  header .logo{
+    visibility: hidden;
+  }
+
+  .logoPic{
+    visibility: visible;
+    width: 50%;
+  }
+}

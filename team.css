@@ -10,6 +10,7 @@ body{
   align-items: center;
   min-height: 100vh;
   background: #1e1e1e;
+
 }
 
 .container{
@@ -75,8 +76,16 @@ body{
   transform: translateY(0) rotateX(0deg)
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .content a{
   text-decoration: none;
+  margin-top: 20%;
+  color: rgb(74, 74, 245);
 }
 
 header{
@@ -136,4 +145,43 @@ header ul li a:hover{
   border-radius: 25% ;
   background-color: #fff;
   color: #000; */
+}
+
+
+@media(max-width: 800px){
+  .container{
+    min-width: 100%;
+    
+  }
+  .container .card{
+    width: 40%;
+    margin: 5%;
+  }
+
+  .container header{
+    display: flex;
+    flex-direction: column;
+  }
+  .container header ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  header .ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .firstCards{
+    margin-top: 10%;
+  }
+
+}
+
+@media(max-width: 500px){
+  
 }
